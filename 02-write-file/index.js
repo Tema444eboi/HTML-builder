@@ -14,5 +14,5 @@ stdin.on('data', (data) => {
   writeStream.write(data.toString());
 });
 
-process.on('exit', () => stdout.write('You are leaving this program ?'));
+process.on('exit', () => stdout.write('You are leaving this program?'));
 process.on('SIGINT', exit);
